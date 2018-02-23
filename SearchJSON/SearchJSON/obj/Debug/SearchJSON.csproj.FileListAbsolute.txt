@@ -1,0 +1,18 @@
+E:\2alka\Study\2 C- C++\zpractise\Zendesk\Zendesk Search\SearchJSON\SearchJSON\bin\Debug\SearchJSON.exe.config
+E:\2alka\Study\2 C- C++\zpractise\Zendesk\Zendesk Search\SearchJSON\SearchJSON\bin\Debug\SearchJSON.exe
+E:\2alka\Study\2 C- C++\zpractise\Zendesk\Zendesk Search\SearchJSON\SearchJSON\bin\Debug\SearchJSON.pdb
+E:\2alka\Study\2 C- C++\zpractise\Zendesk\Zendesk Search\SearchJSON\SearchJSON\bin\Debug\Newtonsoft.Json.dll
+E:\2alka\Study\2 C- C++\zpractise\Zendesk\Zendesk Search\SearchJSON\SearchJSON\bin\Debug\Newtonsoft.Json.xml
+E:\2alka\Study\2 C- C++\zpractise\Zendesk\Zendesk Search\SearchJSON\SearchJSON\obj\Debug\SearchJSON.csproj.CoreCompileInputs.cache
+E:\2alka\Study\2 C- C++\zpractise\Zendesk\Zendesk Search\SearchJSON\SearchJSON\obj\Debug\SearchJSON.exe
+E:\2alka\Study\2 C- C++\zpractise\Zendesk\Zendesk Search\SearchJSON\SearchJSON\obj\Debug\SearchJSON.pdb
+E:\2alka\Study\2 C- C++\zpractise\Zendesk\Zendesk Search\SearchJSON\SearchJSON\obj\Debug\SearchJSON.csprojResolveAssemblyReference.cache
+E:\Zendesk Search\SearchJSON\SearchJSON\bin\Debug\SearchJSON.exe.config
+E:\Zendesk Search\SearchJSON\SearchJSON\bin\Debug\SearchJSON.exe
+E:\Zendesk Search\SearchJSON\SearchJSON\bin\Debug\SearchJSON.pdb
+E:\Zendesk Search\SearchJSON\SearchJSON\bin\Debug\Newtonsoft.Json.dll
+E:\Zendesk Search\SearchJSON\SearchJSON\bin\Debug\Newtonsoft.Json.xml
+E:\Zendesk Search\SearchJSON\SearchJSON\obj\Debug\SearchJSON.csprojResolveAssemblyReference.cache
+E:\Zendesk Search\SearchJSON\SearchJSON\obj\Debug\SearchJSON.csproj.CoreCompileInputs.cache
+E:\Zendesk Search\SearchJSON\SearchJSON\obj\Debug\SearchJSON.exe
+E:\Zendesk Search\SearchJSON\SearchJSON\obj\Debug\SearchJSON.pdb
