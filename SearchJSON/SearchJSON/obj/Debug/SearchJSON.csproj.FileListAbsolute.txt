@@ -16,3 +16,12 @@ E:\Zendesk Search\SearchJSON\SearchJSON\obj\Debug\SearchJSON.csprojResolveAssemb
 E:\Zendesk Search\SearchJSON\SearchJSON\obj\Debug\SearchJSON.csproj.CoreCompileInputs.cache
 E:\Zendesk Search\SearchJSON\SearchJSON\obj\Debug\SearchJSON.exe
 E:\Zendesk Search\SearchJSON\SearchJSON\obj\Debug\SearchJSON.pdb
+E:\Zendesk Search1\SearchJSON\SearchJSON\bin\Debug\SearchJSON.exe.config
+E:\Zendesk Search1\SearchJSON\SearchJSON\bin\Debug\SearchJSON.exe
+E:\Zendesk Search1\SearchJSON\SearchJSON\bin\Debug\SearchJSON.pdb
+E:\Zendesk Search1\SearchJSON\SearchJSON\bin\Debug\Newtonsoft.Json.dll
+E:\Zendesk Search1\SearchJSON\SearchJSON\bin\Debug\Newtonsoft.Json.xml
+E:\Zendesk Search1\SearchJSON\SearchJSON\obj\Debug\SearchJSON.csprojResolveAssemblyReference.cache
+E:\Zendesk Search1\SearchJSON\SearchJSON\obj\Debug\SearchJSON.csproj.CoreCompileInputs.cache
+E:\Zendesk Search1\SearchJSON\SearchJSON\obj\Debug\SearchJSON.exe
+E:\Zendesk Search1\SearchJSON\SearchJSON\obj\Debug\SearchJSON.pdb

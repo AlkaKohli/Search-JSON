@@ -20,12 +20,12 @@ namespace SearchJSON
             Console.WriteLine(" \t ---- Welcome to ZENDESK search ---- \n");
 
             // Retrieve JSON data from all files
-            string filePath             = Environment.CurrentDirectory;
-            string fileNameUsers        = "users.json", fileNameTickets = "tickets.json", fileNameOrganizations = "Organizations.json";
+            string filePath = Environment.CurrentDirectory;
+            string fileNameUsers = "users.json", fileNameTickets = "tickets.json", fileNameOrganizations = "Organizations.json";
 
-            string rawJsonUsers            = File.ReadAllText(Path.Combine(filePath, fileNameUsers));
-            string rawJsonTickets          = File.ReadAllText(Path.Combine(filePath, fileNameTickets));
-            string rawJsonOrganizations    = File.ReadAllText(Path.Combine(filePath, fileNameOrganizations));
+            string rawJsonUsers = File.ReadAllText(Path.Combine(filePath, fileNameUsers));
+            string rawJsonTickets = File.ReadAllText(Path.Combine(filePath, fileNameTickets));
+            string rawJsonOrganizations = File.ReadAllText(Path.Combine(filePath, fileNameOrganizations));
 
             while (true)
             {
@@ -64,7 +64,7 @@ namespace SearchJSON
                         {
                             return;
                         }
-  
+
                     default:
                         Console.WriteLine("\n INCORRECT OPTION");
                         break;
@@ -81,11 +81,11 @@ namespace SearchJSON
             {
                 //displaying the properties only if valid data exists in file
 
-                Console.WriteLine("Following are the searchable fields  :\n");
+                Console.WriteLine("Following are the searchable fields  :");
 
                 //get all the properties of the class(json) 
-                StringBuilder sb                    = new StringBuilder();
-                System.Type type                    = JsonData[0].GetType();
+                StringBuilder sb = new StringBuilder();
+                System.Type type = JsonData[0].GetType();
                 System.Reflection.PropertyInfo[] pi = type.GetProperties();       // Include information for each property
                 if (pi.Length > 0)
                 {
@@ -106,17 +106,38 @@ namespace SearchJSON
 
                 Console.WriteLine("\n Enter the field value - ");
                 propertyVal = Console.ReadLine();
-                
+
                 int iMatchingRecords = 0;       //maintains the count of matching records
                 try
-                {            
+                {
                     foreach (T userObject in JsonData)
                     {
                         Object response = userObject.GetType().GetProperty(propertyName).GetValue(userObject, null);
 
                         if (response != null)
                         {
-                            if (response.ToString().ToUpper() == propertyVal.ToUpper())
+                            // for properties of type list ... valid search value will be entering any one item of the list
+                            if (response is IList<string>
+                            && response.GetType().IsGenericType
+                            && response.GetType().GetGenericTypeDefinition().IsAssignableFrom(typeof(List<>)))
+                            {
+                                List<string> valList = (response as IEnumerable<string>).Cast<string>().ToList();
+                                foreach (var item in valList)
+                                {
+                                    if (item.ToString().IndexOf(propertyVal, StringComparison.CurrentCultureIgnoreCase) != -1)
+                                    {
+                                        iMatchingRecords++;
+                                        Console.WriteLine();
+                                        Console.WriteLine(userObject.ToString());
+                                        break;      //even if one of the value matches display and exit the loop
+                                    }
+                                }
+
+                            }
+
+                            //for properties 
+                            // else if (response.ToString().ToUpper() == propertyVal.ToUpper())
+                            else if (response.ToString().IndexOf(propertyVal, StringComparison.CurrentCultureIgnoreCase) != -1)
                             {
                                 iMatchingRecords++;
                                 Console.WriteLine();
